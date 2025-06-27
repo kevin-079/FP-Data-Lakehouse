@@ -1,0 +1,161 @@
+2025-06-27 08:59:44,344 - INFO - Database dw_nilai_kelasc berhasil dibuat ulang.
+2025-06-27 08:59:44,419 - INFO - Tabel-tabel star schema berhasil dibuat.
+2025-06-27 08:59:44,424 - INFO - Referensi nilai berhasil dimasukkan ke Dim_Nilai.
+2025-06-27 08:59:44,424 - INFO - 📦 [INFO]: Ditemukan 41 file PDF di folder 'data_transkrip'
+
+2025-06-27 08:59:44,538 - INFO - 🔄 Memulai proses ETL untuk: Adelia Paramita Putri_5026231196.pdf
+2025-06-27 08:59:44,539 - INFO - ✅ [SUKSES]: Adelia Paramita Putri_5026231196.pdf berhasil di-transform.
+2025-06-27 08:59:44,598 - INFO - 🎉[SUKSES]: Proses ETL untuk Adelia Paramita Putri_5026231196.pdf SELESAI.
+
+2025-06-27 08:59:44,750 - INFO - 🔄 Memulai proses ETL untuk: Adifa Fajri_5026231178.pdf
+2025-06-27 08:59:44,750 - INFO - ✅ [SUKSES]: Adifa Fajri_5026231178.pdf berhasil di-transform.
+2025-06-27 08:59:44,770 - INFO - 🎉[SUKSES]: Proses ETL untuk Adifa Fajri_5026231178.pdf SELESAI.
+
+2025-06-27 08:59:44,894 - INFO - 🔄 Memulai proses ETL untuk: Akhtar Zia_5026231095.pdf
+2025-06-27 08:59:44,894 - INFO - ✅ [SUKSES]: Akhtar Zia_5026231095.pdf berhasil di-transform.
+2025-06-27 08:59:44,914 - INFO - 🎉[SUKSES]: Proses ETL untuk Akhtar Zia_5026231095.pdf SELESAI.
+
+2025-06-27 08:59:45,013 - INFO - 🔄 Memulai proses ETL untuk: Alfan Ghofari_5026231208.pdf
+2025-06-27 08:59:45,013 - INFO - ✅ [SUKSES]: Alfan Ghofari_5026231208.pdf berhasil di-transform.
+2025-06-27 08:59:45,036 - INFO - 🎉[SUKSES]: Proses ETL untuk Alfan Ghofari_5026231208.pdf SELESAI.
+
+2025-06-27 08:59:45,137 - INFO - 🔄 Memulai proses ETL untuk: Arjuna Veetaraq_5026231227.pdf
+2025-06-27 08:59:45,137 - INFO - ✅ [SUKSES]: Arjuna Veetaraq_5026231227.pdf berhasil di-transform.
+2025-06-27 08:59:45,164 - INFO - 🎉[SUKSES]: Proses ETL untuk Arjuna Veetaraq_5026231227.pdf SELESAI.
+
+2025-06-27 08:59:45,262 - INFO - 🔄 Memulai proses ETL untuk: Arsya Nueva_5026231099.pdf
+2025-06-27 08:59:45,262 - INFO - ✅ [SUKSES]: Arsya Nueva_5026231099.pdf berhasil di-transform.
+2025-06-27 08:59:45,280 - INFO - 🎉[SUKSES]: Proses ETL untuk Arsya Nueva_5026231099.pdf SELESAI.
+
+2025-06-27 08:59:45,375 - INFO - 🔄 Memulai proses ETL untuk: Arya Wiraguna Dwiputra_5026231083.pdf
+2025-06-27 08:59:45,376 - INFO - ✅ [SUKSES]: Arya Wiraguna Dwiputra_5026231083.pdf berhasil di-transform.
+2025-06-27 08:59:45,391 - INFO - 🎉[SUKSES]: Proses ETL untuk Arya Wiraguna Dwiputra_5026231083.pdf SELESAI.
+
+2025-06-27 08:59:45,486 - INFO - 🔄 Memulai proses ETL untuk: Auliya Malika_5026231141.pdf
+2025-06-27 08:59:45,486 - INFO - ✅ [SUKSES]: Auliya Malika_5026231141.pdf berhasil di-transform.
+2025-06-27 08:59:45,504 - INFO - 🎉[SUKSES]: Proses ETL untuk Auliya Malika_5026231141.pdf SELESAI.
+
+2025-06-27 08:59:45,597 - INFO - 🔄 Memulai proses ETL untuk: Ayesha Hana Azkiya_5026231125.pdf
+2025-06-27 08:59:45,598 - INFO - ✅ [SUKSES]: Ayesha Hana Azkiya_5026231125.pdf berhasil di-transform.
+2025-06-27 08:59:45,616 - INFO - 🎉[SUKSES]: Proses ETL untuk Ayesha Hana Azkiya_5026231125.pdf SELESAI.
+
+2025-06-27 08:59:45,760 - INFO - 🔄 Memulai proses ETL untuk: Azrul_5026231166.pdf
+2025-06-27 08:59:45,760 - INFO - ✅ [SUKSES]: Azrul_5026231166.pdf berhasil di-transform.
+2025-06-27 08:59:45,774 - INFO - 🎉[SUKSES]: Proses ETL untuk Azrul_5026231166.pdf SELESAI.
+
+2025-06-27 08:59:45,864 - INFO - 🔄 Memulai proses ETL untuk: Bagas Rafi Dewantara_5026231091.pdf
+2025-06-27 08:59:45,864 - INFO - ✅ [SUKSES]: Bagas Rafi Dewantara_5026231091.pdf berhasil di-transform.
+2025-06-27 08:59:45,883 - INFO - 🎉[SUKSES]: Proses ETL untuk Bagas Rafi Dewantara_5026231091.pdf SELESAI.
+
+2025-06-27 08:59:45,971 - INFO - 🔄 Memulai proses ETL untuk: Baqhiz Faruq S_5026231212.pdf
+2025-06-27 08:59:45,972 - INFO - ✅ [SUKSES]: Baqhiz Faruq S_5026231212.pdf berhasil di-transform.
+2025-06-27 08:59:45,991 - INFO - 🎉[SUKSES]: Proses ETL untuk Baqhiz Faruq S_5026231212.pdf SELESAI.
+
+2025-06-27 08:59:46,083 - INFO - 🔄 Memulai proses ETL untuk: Burhan_5026231074.pdf
+2025-06-27 08:59:46,083 - INFO - ✅ [SUKSES]: Burhan_5026231074.pdf berhasil di-transform.
+2025-06-27 08:59:46,097 - INFO - 🎉[SUKSES]: Proses ETL untuk Burhan_5026231074.pdf SELESAI.
+
+2025-06-27 08:59:46,202 - INFO - 🔄 Memulai proses ETL untuk: Burju_5026231066.pdf
+2025-06-27 08:59:46,202 - INFO - ✅ [SUKSES]: Burju_5026231066.pdf berhasil di-transform.
+2025-06-27 08:59:46,221 - INFO - 🎉[SUKSES]: Proses ETL untuk Burju_5026231066.pdf SELESAI.
+
+2025-06-27 08:59:46,316 - INFO - 🔄 Memulai proses ETL untuk: Cristo_5026231200.pdf
+2025-06-27 08:59:46,316 - INFO - ✅ [SUKSES]: Cristo_5026231200.pdf berhasil di-transform.
+2025-06-27 08:59:46,329 - INFO - 🎉[SUKSES]: Proses ETL untuk Cristo_5026231200.pdf SELESAI.
+
+2025-06-27 08:59:46,417 - INFO - 🔄 Memulai proses ETL untuk: Diva Nesia Putri_5026231020.pdf
+2025-06-27 08:59:46,417 - INFO - ✅ [SUKSES]: Diva Nesia Putri_5026231020.pdf berhasil di-transform.
+2025-06-27 08:59:46,434 - INFO - 🎉[SUKSES]: Proses ETL untuk Diva Nesia Putri_5026231020.pdf SELESAI.
+
+2025-06-27 08:59:47,823 - INFO - 🔄 Memulai proses ETL untuk: Dzaki Adfiz_5026231150.pdf
+2025-06-27 08:59:47,823 - ERROR - ❌ [GAGAL]: Dzaki Adfiz_5026231150.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:59:47,913 - INFO - 🔄 Memulai proses ETL untuk: Eric Vincentius Jaolis_5026231103.pdf
+2025-06-27 08:59:47,913 - INFO - ✅ [SUKSES]: Eric Vincentius Jaolis_5026231103.pdf berhasil di-transform.
+2025-06-27 08:59:47,924 - INFO - 🎉[SUKSES]: Proses ETL untuk Eric Vincentius Jaolis_5026231103.pdf SELESAI.
+
+2025-06-27 08:59:48,014 - INFO - 🔄 Memulai proses ETL untuk: Fathan Maulana Prasetya_5026231026.pdf
+2025-06-27 08:59:48,014 - INFO - ✅ [SUKSES]: Fathan Maulana Prasetya_5026231026.pdf berhasil di-transform.
+2025-06-27 08:59:48,020 - INFO - 🎉[SUKSES]: Proses ETL untuk Fathan Maulana Prasetya_5026231026.pdf SELESAI.
+
+2025-06-27 08:59:48,172 - INFO - 🔄 Memulai proses ETL untuk: Heber Bryan Hutajulu_5026231204.pdf
+2025-06-27 08:59:48,173 - INFO - ✅ [SUKSES]: Heber Bryan Hutajulu_5026231204.pdf berhasil di-transform.
+2025-06-27 08:59:48,192 - INFO - 🎉[SUKSES]: Proses ETL untuk Heber Bryan Hutajulu_5026231204.pdf SELESAI.
+
+2025-06-27 08:59:48,298 - INFO - 🔄 Memulai proses ETL untuk: Hizkia Crisantino_5026231040.pdf
+2025-06-27 08:59:48,298 - INFO - ✅ [SUKSES]: Hizkia Crisantino_5026231040.pdf berhasil di-transform.
+2025-06-27 08:59:48,314 - INFO - 🎉[SUKSES]: Proses ETL untuk Hizkia Crisantino_5026231040.pdf SELESAI.
+
+2025-06-27 08:59:48,411 - INFO - 🔄 Memulai proses ETL untuk: I Putu Febryan Khrisyantara_5026231116.pdf
+2025-06-27 08:59:48,412 - INFO - ✅ [SUKSES]: I Putu Febryan Khrisyantara_5026231116.pdf berhasil di-transform.
+2025-06-27 08:59:48,424 - INFO - 🎉[SUKSES]: Proses ETL untuk I Putu Febryan Khrisyantara_5026231116.pdf SELESAI.
+
+2025-06-27 08:59:48,509 - INFO - 🔄 Memulai proses ETL untuk: Javed Amani Syauki_5026231186.pdf
+2025-06-27 08:59:48,510 - INFO - ✅ [SUKSES]: Javed Amani Syauki_5026231186.pdf berhasil di-transform.
+2025-06-27 08:59:48,520 - INFO - 🎉[SUKSES]: Proses ETL untuk Javed Amani Syauki_5026231186.pdf SELESAI.
+
+2025-06-27 08:59:48,610 - INFO - 🔄 Memulai proses ETL untuk: Kayla Putri M_5026231158.pdf
+2025-06-27 08:59:48,611 - INFO - ✅ [SUKSES]: Kayla Putri M_5026231158.pdf berhasil di-transform.
+2025-06-27 08:59:48,620 - INFO - 🎉[SUKSES]: Proses ETL untuk Kayla Putri M_5026231158.pdf SELESAI.
+
+2025-06-27 08:59:48,722 - INFO - 🔄 Memulai proses ETL untuk: Kellan Matthew Gulardi_5026231028.pdf
+2025-06-27 08:59:48,723 - INFO - ✅ [SUKSES]: Kellan Matthew Gulardi_5026231028.pdf berhasil di-transform.
+2025-06-27 08:59:48,741 - INFO - 🎉[SUKSES]: Proses ETL untuk Kellan Matthew Gulardi_5026231028.pdf SELESAI.
+
+2025-06-27 08:59:48,837 - INFO - 🔄 Memulai proses ETL untuk: Kevin Nathanael _5026231079.pdf
+2025-06-27 08:59:48,837 - INFO - ✅ [SUKSES]: Kevin Nathanael _5026231079.pdf berhasil di-transform.
+2025-06-27 08:59:48,853 - INFO - 🎉[SUKSES]: Proses ETL untuk Kevin Nathanael _5026231079.pdf SELESAI.
+
+2025-06-27 08:59:50,184 - INFO - 🔄 Memulai proses ETL untuk: Muhammad Ade Dzakwan_5026231154.pdf
+2025-06-27 08:59:50,184 - ERROR - ❌ [GAGAL]: Muhammad Ade Dzakwan_5026231154.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:59:50,317 - INFO - 🔄 Memulai proses ETL untuk: Muhammad Hudzaifah A_5026211081.pdf
+2025-06-27 08:59:50,318 - INFO - ✅ [SUKSES]: Muhammad Hudzaifah A_5026211081.pdf berhasil di-transform.
+2025-06-27 08:59:50,327 - INFO - 🎉[SUKSES]: Proses ETL untuk Muhammad Hudzaifah A_5026211081.pdf SELESAI.
+
+2025-06-27 08:59:50,436 - INFO - 🔄 Memulai proses ETL untuk: Muhammad Iqbal Baiduri Yamani_5026221103.pdf
+2025-06-27 08:59:50,437 - INFO - ✅ [SUKSES]: Muhammad Iqbal Baiduri Yamani_5026221103.pdf berhasil di-transform.
+2025-06-27 08:59:50,447 - INFO - 🎉[SUKSES]: Proses ETL untuk Muhammad Iqbal Baiduri Yamani_5026221103.pdf SELESAI.
+
+2025-06-27 08:59:50,587 - INFO - 🔄 Memulai proses ETL untuk: Muhammad Razan Parisya Putra_5026231174.pdf
+2025-06-27 08:59:50,588 - INFO - ✅ [SUKSES]: Muhammad Razan Parisya Putra_5026231174.pdf berhasil di-transform.
+2025-06-27 08:59:50,611 - INFO - 🎉[SUKSES]: Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf SELESAI.
+
+2025-06-27 08:59:52,027 - INFO - 🔄 Memulai proses ETL untuk: Muhammad Rifqi Alfareza Santosa_5026231133.pdf
+2025-06-27 08:59:52,028 - ERROR - ❌ [GAGAL]: Muhammad Rifqi Alfareza Santosa_5026231133.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:59:52,114 - INFO - 🔄 Memulai proses ETL untuk: Naufal Maula Nabil_5026231107.pdf
+2025-06-27 08:59:52,115 - INFO - ✅ [SUKSES]: Naufal Maula Nabil_5026231107.pdf berhasil di-transform.
+2025-06-27 08:59:52,124 - INFO - 🎉[SUKSES]: Proses ETL untuk Naufal Maula Nabil_5026231107.pdf SELESAI.
+
+2025-06-27 08:59:52,223 - INFO - 🔄 Memulai proses ETL untuk: NIcholas Evan S_5026231146.pdf
+2025-06-27 08:59:52,224 - INFO - ✅ [SUKSES]: NIcholas Evan S_5026231146.pdf berhasil di-transform.
+2025-06-27 08:59:52,244 - INFO - 🎉[SUKSES]: Proses ETL untuk NIcholas Evan S_5026231146.pdf SELESAI.
+
+2025-06-27 08:59:52,342 - INFO - 🔄 Memulai proses ETL untuk: Rafindita Sumar Ramadhan_5026231129.pdf
+2025-06-27 08:59:52,342 - INFO - ✅ [SUKSES]: Rafindita Sumar Ramadhan_5026231129.pdf berhasil di-transform.
+2025-06-27 08:59:52,350 - INFO - 🎉[SUKSES]: Proses ETL untuk Rafindita Sumar Ramadhan_5026231129.pdf SELESAI.
+
+2025-06-27 08:59:52,454 - INFO - 🔄 Memulai proses ETL untuk: Sahilah Amru_5026231182.pdf
+2025-06-27 08:59:52,454 - INFO - ✅ [SUKSES]: Sahilah Amru_5026231182.pdf berhasil di-transform.
+2025-06-27 08:59:52,474 - INFO - 🎉[SUKSES]: Proses ETL untuk Sahilah Amru_5026231182.pdf SELESAI.
+
+2025-06-27 08:59:52,571 - INFO - 🔄 Memulai proses ETL untuk: Shafly Hidayatullah_5026231036.pdf
+2025-06-27 08:59:52,571 - INFO - ✅ [SUKSES]: Shafly Hidayatullah_5026231036.pdf berhasil di-transform.
+2025-06-27 08:59:52,591 - INFO - 🎉[SUKSES]: Proses ETL untuk Shafly Hidayatullah_5026231036.pdf SELESAI.
+
+2025-06-27 08:59:52,642 - INFO - 🔄 Memulai proses ETL untuk: Shahnaz Ariqah Simanullang_5026231087.pdf
+2025-06-27 08:59:52,643 - INFO - ✅ [SUKSES]: Shahnaz Ariqah Simanullang_5026231087.pdf berhasil di-transform.
+2025-06-27 08:59:52,652 - INFO - 🎉[SUKSES]: Proses ETL untuk Shahnaz Ariqah Simanullang_5026231087.pdf SELESAI.
+
+2025-06-27 08:59:52,750 - INFO - 🔄 Memulai proses ETL untuk: Sinta Dewi Rahmawati_5026231231.pdf
+2025-06-27 08:59:52,751 - INFO - ✅ [SUKSES]: Sinta Dewi Rahmawati_5026231231.pdf berhasil di-transform.
+2025-06-27 08:59:52,762 - INFO - 🎉[SUKSES]: Proses ETL untuk Sinta Dewi Rahmawati_5026231231.pdf SELESAI.
+
+2025-06-27 08:59:52,866 - INFO - 🔄 Memulai proses ETL untuk: Tahiyyah Mufhimah_5026231170.pdf
+2025-06-27 08:59:52,866 - INFO - ✅ [SUKSES]: Tahiyyah Mufhimah_5026231170.pdf berhasil di-transform.
+2025-06-27 08:59:52,880 - INFO - 🎉[SUKSES]: Proses ETL untuk Tahiyyah Mufhimah_5026231170.pdf SELESAI.
+
+2025-06-27 08:59:53,039 - INFO - 🔄 Memulai proses ETL untuk: Yoka_5026231032.pdf
+2025-06-27 08:59:53,039 - INFO - ✅ [SUKSES]: Yoka_5026231032.pdf berhasil di-transform.
+2025-06-27 08:59:53,060 - INFO - 🎉[SUKSES]: Proses ETL untuk Yoka_5026231032.pdf SELESAI.
+
+2025-06-27 08:59:54,367 - INFO - 🔄 Memulai proses ETL untuk: Zihni_5026231012.pdf
+2025-06-27 08:59:54,367 - ERROR - ❌ [GAGAL]: Zihni_5026231012.pdf gagal di-transform: NRP/Nama tidak ditemukan.

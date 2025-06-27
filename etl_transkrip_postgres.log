@@ -1,0 +1,517 @@
+2025-06-27 08:07:08,108 - INFO - Database dw_nilai_kelasc berhasil dibuat ulang.
+2025-06-27 08:07:08,247 - INFO - Tabel-tabel star schema berhasil dibuat.
+2025-06-27 08:07:08,252 - INFO - Referensi nilai berhasil dimasukkan ke Dim_Nilai.
+2025-06-27 08:07:08,252 - INFO - \U0001f4e6[INFO]: Ditemukan 41 file PDF di folder 'data_transkrip'
+
+2025-06-27 08:07:08,425 - INFO - \U0001f504 Memulai proses ETL untuk: Adelia Paramita Putri_5026231196.pdf
+2025-06-27 08:07:08,426 - INFO - \u2705[SUKSES]: Adelia Paramita Putri_5026231196.pdf berhasil di-transform.
+2025-06-27 08:07:08,463 - ERROR - \U0001f4a5[ERROR]: Adelia Paramita Putri_5026231196.pdf error fatal: insert or update on table "fact_transkrip" violates foreign key constraint "fact_transkrip_id_mahasiswa_fkey"
+DETAIL:  Key (id_mahasiswa)=(0) is not present in table "dim_mahasiswa".
+
+
+2025-06-27 08:07:08,597 - INFO - \U0001f504 Memulai proses ETL untuk: Adifa Fajri_5026231178.pdf
+2025-06-27 08:07:08,597 - INFO - \u2705[SUKSES]: Adifa Fajri_5026231178.pdf berhasil di-transform.
+2025-06-27 08:07:08,598 - ERROR - \U0001f4a5[ERROR]: Adifa Fajri_5026231178.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:08,724 - INFO - \U0001f504 Memulai proses ETL untuk: Akhtar Zia_5026231095.pdf
+2025-06-27 08:07:08,724 - INFO - \u2705[SUKSES]: Akhtar Zia_5026231095.pdf berhasil di-transform.
+2025-06-27 08:07:08,725 - ERROR - \U0001f4a5[ERROR]: Akhtar Zia_5026231095.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:08,835 - INFO - \U0001f504 Memulai proses ETL untuk: Alfan Ghofari_5026231208.pdf
+2025-06-27 08:07:08,835 - INFO - \u2705[SUKSES]: Alfan Ghofari_5026231208.pdf berhasil di-transform.
+2025-06-27 08:07:08,836 - ERROR - \U0001f4a5[ERROR]: Alfan Ghofari_5026231208.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:08,944 - INFO - \U0001f504 Memulai proses ETL untuk: Arjuna Veetaraq_5026231227.pdf
+2025-06-27 08:07:08,944 - INFO - \u2705[SUKSES]: Arjuna Veetaraq_5026231227.pdf berhasil di-transform.
+2025-06-27 08:07:08,945 - ERROR - \U0001f4a5[ERROR]: Arjuna Veetaraq_5026231227.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,052 - INFO - \U0001f504 Memulai proses ETL untuk: Arsya Nueva_5026231099.pdf
+2025-06-27 08:07:09,052 - INFO - \u2705[SUKSES]: Arsya Nueva_5026231099.pdf berhasil di-transform.
+2025-06-27 08:07:09,053 - ERROR - \U0001f4a5[ERROR]: Arsya Nueva_5026231099.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,155 - INFO - \U0001f504 Memulai proses ETL untuk: Arya Wiraguna Dwiputra_5026231083.pdf
+2025-06-27 08:07:09,155 - INFO - \u2705[SUKSES]: Arya Wiraguna Dwiputra_5026231083.pdf berhasil di-transform.
+2025-06-27 08:07:09,156 - ERROR - \U0001f4a5[ERROR]: Arya Wiraguna Dwiputra_5026231083.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,265 - INFO - \U0001f504 Memulai proses ETL untuk: Auliya Malika_5026231141.pdf
+2025-06-27 08:07:09,265 - INFO - \u2705[SUKSES]: Auliya Malika_5026231141.pdf berhasil di-transform.
+2025-06-27 08:07:09,266 - ERROR - \U0001f4a5[ERROR]: Auliya Malika_5026231141.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,380 - INFO - \U0001f504 Memulai proses ETL untuk: Ayesha Hana Azkiya_5026231125.pdf
+2025-06-27 08:07:09,380 - INFO - \u2705[SUKSES]: Ayesha Hana Azkiya_5026231125.pdf berhasil di-transform.
+2025-06-27 08:07:09,381 - ERROR - \U0001f4a5[ERROR]: Ayesha Hana Azkiya_5026231125.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,542 - INFO - \U0001f504 Memulai proses ETL untuk: Azrul_5026231166.pdf
+2025-06-27 08:07:09,543 - INFO - \u2705[SUKSES]: Azrul_5026231166.pdf berhasil di-transform.
+2025-06-27 08:07:09,543 - ERROR - \U0001f4a5[ERROR]: Azrul_5026231166.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,659 - INFO - \U0001f504 Memulai proses ETL untuk: Bagas Rafi Dewantara_5026231091.pdf
+2025-06-27 08:07:09,659 - INFO - \u2705[SUKSES]: Bagas Rafi Dewantara_5026231091.pdf berhasil di-transform.
+2025-06-27 08:07:09,659 - ERROR - \U0001f4a5[ERROR]: Bagas Rafi Dewantara_5026231091.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,756 - INFO - \U0001f504 Memulai proses ETL untuk: Baqhiz Faruq S_5026231212.pdf
+2025-06-27 08:07:09,756 - INFO - \u2705[SUKSES]: Baqhiz Faruq S_5026231212.pdf berhasil di-transform.
+2025-06-27 08:07:09,757 - ERROR - \U0001f4a5[ERROR]: Baqhiz Faruq S_5026231212.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:09,881 - INFO - \U0001f504 Memulai proses ETL untuk: Burhan_5026231074.pdf
+2025-06-27 08:07:09,881 - INFO - \u2705[SUKSES]: Burhan_5026231074.pdf berhasil di-transform.
+2025-06-27 08:07:09,882 - ERROR - \U0001f4a5[ERROR]: Burhan_5026231074.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:10,001 - INFO - \U0001f504 Memulai proses ETL untuk: Burju_5026231066.pdf
+2025-06-27 08:07:10,001 - INFO - \u2705[SUKSES]: Burju_5026231066.pdf berhasil di-transform.
+2025-06-27 08:07:10,001 - ERROR - \U0001f4a5[ERROR]: Burju_5026231066.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:10,118 - INFO - \U0001f504 Memulai proses ETL untuk: Cristo_5026231200.pdf
+2025-06-27 08:07:10,119 - INFO - \u2705[SUKSES]: Cristo_5026231200.pdf berhasil di-transform.
+2025-06-27 08:07:10,119 - ERROR - \U0001f4a5[ERROR]: Cristo_5026231200.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:10,261 - INFO - \U0001f504 Memulai proses ETL untuk: Diva Nesia Putri_5026231020.pdf
+2025-06-27 08:07:10,262 - INFO - \u2705[SUKSES]: Diva Nesia Putri_5026231020.pdf berhasil di-transform.
+2025-06-27 08:07:10,262 - ERROR - \U0001f4a5[ERROR]: Diva Nesia Putri_5026231020.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:11,743 - INFO - \U0001f504 Memulai proses ETL untuk: Dzaki Adfiz_5026231150.pdf
+2025-06-27 08:07:11,744 - ERROR - \u274c[GAGAL]: Dzaki Adfiz_5026231150.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:07:11,870 - INFO - \U0001f504 Memulai proses ETL untuk: Eric Vincentius Jaolis_5026231103.pdf
+2025-06-27 08:07:11,870 - INFO - \u2705[SUKSES]: Eric Vincentius Jaolis_5026231103.pdf berhasil di-transform.
+2025-06-27 08:07:11,871 - ERROR - \U0001f4a5[ERROR]: Eric Vincentius Jaolis_5026231103.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:11,985 - INFO - \U0001f504 Memulai proses ETL untuk: Fathan Maulana Prasetya_5026231026.pdf
+2025-06-27 08:07:11,986 - INFO - \u2705[SUKSES]: Fathan Maulana Prasetya_5026231026.pdf berhasil di-transform.
+2025-06-27 08:07:11,986 - ERROR - \U0001f4a5[ERROR]: Fathan Maulana Prasetya_5026231026.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,127 - INFO - \U0001f504 Memulai proses ETL untuk: Heber Bryan Hutajulu_5026231204.pdf
+2025-06-27 08:07:12,128 - INFO - \u2705[SUKSES]: Heber Bryan Hutajulu_5026231204.pdf berhasil di-transform.
+2025-06-27 08:07:12,128 - ERROR - \U0001f4a5[ERROR]: Heber Bryan Hutajulu_5026231204.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,318 - INFO - \U0001f504 Memulai proses ETL untuk: Hizkia Crisantino_5026231040.pdf
+2025-06-27 08:07:12,318 - INFO - \u2705[SUKSES]: Hizkia Crisantino_5026231040.pdf berhasil di-transform.
+2025-06-27 08:07:12,318 - ERROR - \U0001f4a5[ERROR]: Hizkia Crisantino_5026231040.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,435 - INFO - \U0001f504 Memulai proses ETL untuk: I Putu Febryan Khrisyantara_5026231116.pdf
+2025-06-27 08:07:12,435 - INFO - \u2705[SUKSES]: I Putu Febryan Khrisyantara_5026231116.pdf berhasil di-transform.
+2025-06-27 08:07:12,436 - ERROR - \U0001f4a5[ERROR]: I Putu Febryan Khrisyantara_5026231116.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,547 - INFO - \U0001f504 Memulai proses ETL untuk: Javed Amani Syauki_5026231186.pdf
+2025-06-27 08:07:12,548 - INFO - \u2705[SUKSES]: Javed Amani Syauki_5026231186.pdf berhasil di-transform.
+2025-06-27 08:07:12,548 - ERROR - \U0001f4a5[ERROR]: Javed Amani Syauki_5026231186.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,662 - INFO - \U0001f504 Memulai proses ETL untuk: Kayla Putri M_5026231158.pdf
+2025-06-27 08:07:12,662 - INFO - \u2705[SUKSES]: Kayla Putri M_5026231158.pdf berhasil di-transform.
+2025-06-27 08:07:12,663 - ERROR - \U0001f4a5[ERROR]: Kayla Putri M_5026231158.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,785 - INFO - \U0001f504 Memulai proses ETL untuk: Kellan Matthew Gulardi_5026231028.pdf
+2025-06-27 08:07:12,785 - INFO - \u2705[SUKSES]: Kellan Matthew Gulardi_5026231028.pdf berhasil di-transform.
+2025-06-27 08:07:12,786 - ERROR - \U0001f4a5[ERROR]: Kellan Matthew Gulardi_5026231028.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:12,934 - INFO - \U0001f504 Memulai proses ETL untuk: Kevin Nathanael _5026231079.pdf
+2025-06-27 08:07:12,934 - INFO - \u2705[SUKSES]: Kevin Nathanael _5026231079.pdf berhasil di-transform.
+2025-06-27 08:07:12,934 - ERROR - \U0001f4a5[ERROR]: Kevin Nathanael _5026231079.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:14,446 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Ade Dzakwan_5026231154.pdf
+2025-06-27 08:07:14,447 - ERROR - \u274c[GAGAL]: Muhammad Ade Dzakwan_5026231154.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:07:14,641 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Hudzaifah A_5026211081.pdf
+2025-06-27 08:07:14,641 - INFO - \u2705[SUKSES]: Muhammad Hudzaifah A_5026211081.pdf berhasil di-transform.
+2025-06-27 08:07:14,642 - ERROR - \U0001f4a5[ERROR]: Muhammad Hudzaifah A_5026211081.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:14,780 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Iqbal Baiduri Yamani_5026221103.pdf
+2025-06-27 08:07:14,781 - INFO - \u2705[SUKSES]: Muhammad Iqbal Baiduri Yamani_5026221103.pdf berhasil di-transform.
+2025-06-27 08:07:14,781 - ERROR - \U0001f4a5[ERROR]: Muhammad Iqbal Baiduri Yamani_5026221103.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:14,967 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Razan Parisya Putra_5026231174.pdf
+2025-06-27 08:07:14,967 - INFO - \u2705[SUKSES]: Muhammad Razan Parisya Putra_5026231174.pdf berhasil di-transform.
+2025-06-27 08:07:14,968 - ERROR - \U0001f4a5[ERROR]: Muhammad Razan Parisya Putra_5026231174.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:16,674 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Rifqi Alfareza Santosa_5026231133.pdf
+2025-06-27 08:07:16,674 - ERROR - \u274c[GAGAL]: Muhammad Rifqi Alfareza Santosa_5026231133.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:07:16,927 - INFO - \U0001f504 Memulai proses ETL untuk: Naufal Maula Nabil_5026231107.pdf
+2025-06-27 08:07:16,928 - INFO - \u2705[SUKSES]: Naufal Maula Nabil_5026231107.pdf berhasil di-transform.
+2025-06-27 08:07:16,928 - ERROR - \U0001f4a5[ERROR]: Naufal Maula Nabil_5026231107.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,060 - INFO - \U0001f504 Memulai proses ETL untuk: NIcholas Evan S_5026231146.pdf
+2025-06-27 08:07:17,061 - INFO - \u2705[SUKSES]: NIcholas Evan S_5026231146.pdf berhasil di-transform.
+2025-06-27 08:07:17,061 - ERROR - \U0001f4a5[ERROR]: NIcholas Evan S_5026231146.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,198 - INFO - \U0001f504 Memulai proses ETL untuk: Rafindita Sumar Ramadhan_5026231129.pdf
+2025-06-27 08:07:17,198 - INFO - \u2705[SUKSES]: Rafindita Sumar Ramadhan_5026231129.pdf berhasil di-transform.
+2025-06-27 08:07:17,199 - ERROR - \U0001f4a5[ERROR]: Rafindita Sumar Ramadhan_5026231129.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,324 - INFO - \U0001f504 Memulai proses ETL untuk: Sahilah Amru_5026231182.pdf
+2025-06-27 08:07:17,324 - INFO - \u2705[SUKSES]: Sahilah Amru_5026231182.pdf berhasil di-transform.
+2025-06-27 08:07:17,325 - ERROR - \U0001f4a5[ERROR]: Sahilah Amru_5026231182.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,440 - INFO - \U0001f504 Memulai proses ETL untuk: Shafly Hidayatullah_5026231036.pdf
+2025-06-27 08:07:17,440 - INFO - \u2705[SUKSES]: Shafly Hidayatullah_5026231036.pdf berhasil di-transform.
+2025-06-27 08:07:17,441 - ERROR - \U0001f4a5[ERROR]: Shafly Hidayatullah_5026231036.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,513 - INFO - \U0001f504 Memulai proses ETL untuk: Shahnaz Ariqah Simanullang_5026231087.pdf
+2025-06-27 08:07:17,513 - INFO - \u2705[SUKSES]: Shahnaz Ariqah Simanullang_5026231087.pdf berhasil di-transform.
+2025-06-27 08:07:17,514 - ERROR - \U0001f4a5[ERROR]: Shahnaz Ariqah Simanullang_5026231087.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,628 - INFO - \U0001f504 Memulai proses ETL untuk: Sinta Dewi Rahmawati_5026231231.pdf
+2025-06-27 08:07:17,628 - INFO - \u2705[SUKSES]: Sinta Dewi Rahmawati_5026231231.pdf berhasil di-transform.
+2025-06-27 08:07:17,629 - ERROR - \U0001f4a5[ERROR]: Sinta Dewi Rahmawati_5026231231.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,747 - INFO - \U0001f504 Memulai proses ETL untuk: Tahiyyah Mufhimah_5026231170.pdf
+2025-06-27 08:07:17,747 - INFO - \u2705[SUKSES]: Tahiyyah Mufhimah_5026231170.pdf berhasil di-transform.
+2025-06-27 08:07:17,748 - ERROR - \U0001f4a5[ERROR]: Tahiyyah Mufhimah_5026231170.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:17,929 - INFO - \U0001f504 Memulai proses ETL untuk: Yoka_5026231032.pdf
+2025-06-27 08:07:17,930 - INFO - \u2705[SUKSES]: Yoka_5026231032.pdf berhasil di-transform.
+2025-06-27 08:07:17,930 - ERROR - \U0001f4a5[ERROR]: Yoka_5026231032.pdf error fatal: current transaction is aborted, commands ignored until end of transaction block
+
+
+2025-06-27 08:07:19,629 - INFO - \U0001f504 Memulai proses ETL untuk: Zihni_5026231012.pdf
+2025-06-27 08:07:19,629 - ERROR - \u274c[GAGAL]: Zihni_5026231012.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:18:43,519 - INFO - \U0001f4e6[INFO]: Ditemukan 41 file PDF di folder 'data_transkrip'
+
+2025-06-27 08:18:43,611 - INFO - \U0001f504 Memulai proses ETL untuk: Adelia Paramita Putri_5026231196.pdf
+2025-06-27 08:18:43,612 - INFO - \u2705[SUKSES]: Adelia Paramita Putri_5026231196.pdf berhasil di-transform.
+2025-06-27 08:18:43,625 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Adelia Paramita Putri_5026231196.pdf SELESAI.
+
+2025-06-27 08:18:43,729 - INFO - \U0001f504 Memulai proses ETL untuk: Adifa Fajri_5026231178.pdf
+2025-06-27 08:18:43,730 - INFO - \u2705[SUKSES]: Adifa Fajri_5026231178.pdf berhasil di-transform.
+2025-06-27 08:18:43,746 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Adifa Fajri_5026231178.pdf SELESAI.
+
+2025-06-27 08:18:43,838 - INFO - \U0001f504 Memulai proses ETL untuk: Akhtar Zia_5026231095.pdf
+2025-06-27 08:18:43,839 - INFO - \u2705[SUKSES]: Akhtar Zia_5026231095.pdf berhasil di-transform.
+2025-06-27 08:18:43,854 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Akhtar Zia_5026231095.pdf SELESAI.
+
+2025-06-27 08:18:43,958 - INFO - \U0001f504 Memulai proses ETL untuk: Alfan Ghofari_5026231208.pdf
+2025-06-27 08:18:43,958 - INFO - \u2705[SUKSES]: Alfan Ghofari_5026231208.pdf berhasil di-transform.
+2025-06-27 08:18:43,964 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Alfan Ghofari_5026231208.pdf SELESAI.
+
+2025-06-27 08:18:44,063 - INFO - \U0001f504 Memulai proses ETL untuk: Arjuna Veetaraq_5026231227.pdf
+2025-06-27 08:18:44,063 - INFO - \u2705[SUKSES]: Arjuna Veetaraq_5026231227.pdf berhasil di-transform.
+2025-06-27 08:18:44,081 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arjuna Veetaraq_5026231227.pdf SELESAI.
+
+2025-06-27 08:18:44,169 - INFO - \U0001f504 Memulai proses ETL untuk: Arsya Nueva_5026231099.pdf
+2025-06-27 08:18:44,169 - INFO - \u2705[SUKSES]: Arsya Nueva_5026231099.pdf berhasil di-transform.
+2025-06-27 08:18:44,188 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arsya Nueva_5026231099.pdf SELESAI.
+
+2025-06-27 08:18:44,280 - INFO - \U0001f504 Memulai proses ETL untuk: Arya Wiraguna Dwiputra_5026231083.pdf
+2025-06-27 08:18:44,280 - INFO - \u2705[SUKSES]: Arya Wiraguna Dwiputra_5026231083.pdf berhasil di-transform.
+2025-06-27 08:18:44,298 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arya Wiraguna Dwiputra_5026231083.pdf SELESAI.
+
+2025-06-27 08:18:44,391 - INFO - \U0001f504 Memulai proses ETL untuk: Auliya Malika_5026231141.pdf
+2025-06-27 08:18:44,392 - INFO - \u2705[SUKSES]: Auliya Malika_5026231141.pdf berhasil di-transform.
+2025-06-27 08:18:44,413 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Auliya Malika_5026231141.pdf SELESAI.
+
+2025-06-27 08:18:44,513 - INFO - \U0001f504 Memulai proses ETL untuk: Ayesha Hana Azkiya_5026231125.pdf
+2025-06-27 08:18:44,513 - INFO - \u2705[SUKSES]: Ayesha Hana Azkiya_5026231125.pdf berhasil di-transform.
+2025-06-27 08:18:44,518 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Ayesha Hana Azkiya_5026231125.pdf SELESAI.
+
+2025-06-27 08:18:44,653 - INFO - \U0001f504 Memulai proses ETL untuk: Azrul_5026231166.pdf
+2025-06-27 08:18:44,653 - INFO - \u2705[SUKSES]: Azrul_5026231166.pdf berhasil di-transform.
+2025-06-27 08:18:44,666 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Azrul_5026231166.pdf SELESAI.
+
+2025-06-27 08:18:44,755 - INFO - \U0001f504 Memulai proses ETL untuk: Bagas Rafi Dewantara_5026231091.pdf
+2025-06-27 08:18:44,755 - INFO - \u2705[SUKSES]: Bagas Rafi Dewantara_5026231091.pdf berhasil di-transform.
+2025-06-27 08:18:44,767 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Bagas Rafi Dewantara_5026231091.pdf SELESAI.
+
+2025-06-27 08:18:44,848 - INFO - \U0001f504 Memulai proses ETL untuk: Baqhiz Faruq S_5026231212.pdf
+2025-06-27 08:18:44,848 - INFO - \u2705[SUKSES]: Baqhiz Faruq S_5026231212.pdf berhasil di-transform.
+2025-06-27 08:18:44,867 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Baqhiz Faruq S_5026231212.pdf SELESAI.
+
+2025-06-27 08:18:44,957 - INFO - \U0001f504 Memulai proses ETL untuk: Burhan_5026231074.pdf
+2025-06-27 08:18:44,958 - INFO - \u2705[SUKSES]: Burhan_5026231074.pdf berhasil di-transform.
+2025-06-27 08:18:44,973 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Burhan_5026231074.pdf SELESAI.
+
+2025-06-27 08:18:45,082 - INFO - \U0001f504 Memulai proses ETL untuk: Burju_5026231066.pdf
+2025-06-27 08:18:45,082 - INFO - \u2705[SUKSES]: Burju_5026231066.pdf berhasil di-transform.
+2025-06-27 08:18:45,094 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Burju_5026231066.pdf SELESAI.
+
+2025-06-27 08:18:45,196 - INFO - \U0001f504 Memulai proses ETL untuk: Cristo_5026231200.pdf
+2025-06-27 08:18:45,196 - INFO - \u2705[SUKSES]: Cristo_5026231200.pdf berhasil di-transform.
+2025-06-27 08:18:45,204 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Cristo_5026231200.pdf SELESAI.
+
+2025-06-27 08:18:45,300 - INFO - \U0001f504 Memulai proses ETL untuk: Diva Nesia Putri_5026231020.pdf
+2025-06-27 08:18:45,301 - INFO - \u2705[SUKSES]: Diva Nesia Putri_5026231020.pdf berhasil di-transform.
+2025-06-27 08:18:45,310 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Diva Nesia Putri_5026231020.pdf SELESAI.
+
+2025-06-27 08:18:46,798 - INFO - \U0001f504 Memulai proses ETL untuk: Dzaki Adfiz_5026231150.pdf
+2025-06-27 08:18:46,798 - ERROR - \u274c[GAGAL]: Dzaki Adfiz_5026231150.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:18:46,895 - INFO - \U0001f504 Memulai proses ETL untuk: Eric Vincentius Jaolis_5026231103.pdf
+2025-06-27 08:18:46,895 - INFO - \u2705[SUKSES]: Eric Vincentius Jaolis_5026231103.pdf berhasil di-transform.
+2025-06-27 08:18:46,912 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Eric Vincentius Jaolis_5026231103.pdf SELESAI.
+
+2025-06-27 08:18:47,016 - INFO - \U0001f504 Memulai proses ETL untuk: Fathan Maulana Prasetya_5026231026.pdf
+2025-06-27 08:18:47,017 - INFO - \u2705[SUKSES]: Fathan Maulana Prasetya_5026231026.pdf berhasil di-transform.
+2025-06-27 08:18:47,026 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Fathan Maulana Prasetya_5026231026.pdf SELESAI.
+
+2025-06-27 08:18:47,139 - INFO - \U0001f504 Memulai proses ETL untuk: Heber Bryan Hutajulu_5026231204.pdf
+2025-06-27 08:18:47,139 - INFO - \u2705[SUKSES]: Heber Bryan Hutajulu_5026231204.pdf berhasil di-transform.
+2025-06-27 08:18:47,150 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Heber Bryan Hutajulu_5026231204.pdf SELESAI.
+
+2025-06-27 08:18:47,297 - INFO - \U0001f504 Memulai proses ETL untuk: Hizkia Crisantino_5026231040.pdf
+2025-06-27 08:18:47,297 - INFO - \u2705[SUKSES]: Hizkia Crisantino_5026231040.pdf berhasil di-transform.
+2025-06-27 08:18:47,307 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Hizkia Crisantino_5026231040.pdf SELESAI.
+
+2025-06-27 08:18:47,414 - INFO - \U0001f504 Memulai proses ETL untuk: I Putu Febryan Khrisyantara_5026231116.pdf
+2025-06-27 08:18:47,414 - INFO - \u2705[SUKSES]: I Putu Febryan Khrisyantara_5026231116.pdf berhasil di-transform.
+2025-06-27 08:18:47,428 - INFO - \U0001f389[SUKSES]: Proses ETL untuk I Putu Febryan Khrisyantara_5026231116.pdf SELESAI.
+
+2025-06-27 08:18:47,527 - INFO - \U0001f504 Memulai proses ETL untuk: Javed Amani Syauki_5026231186.pdf
+2025-06-27 08:18:47,527 - INFO - \u2705[SUKSES]: Javed Amani Syauki_5026231186.pdf berhasil di-transform.
+2025-06-27 08:18:47,536 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Javed Amani Syauki_5026231186.pdf SELESAI.
+
+2025-06-27 08:18:47,636 - INFO - \U0001f504 Memulai proses ETL untuk: Kayla Putri M_5026231158.pdf
+2025-06-27 08:18:47,636 - INFO - \u2705[SUKSES]: Kayla Putri M_5026231158.pdf berhasil di-transform.
+2025-06-27 08:18:47,647 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kayla Putri M_5026231158.pdf SELESAI.
+
+2025-06-27 08:18:47,747 - INFO - \U0001f504 Memulai proses ETL untuk: Kellan Matthew Gulardi_5026231028.pdf
+2025-06-27 08:18:47,748 - INFO - \u2705[SUKSES]: Kellan Matthew Gulardi_5026231028.pdf berhasil di-transform.
+2025-06-27 08:18:47,766 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kellan Matthew Gulardi_5026231028.pdf SELESAI.
+
+2025-06-27 08:18:47,875 - INFO - \U0001f504 Memulai proses ETL untuk: Kevin Nathanael _5026231079.pdf
+2025-06-27 08:18:47,876 - INFO - \u2705[SUKSES]: Kevin Nathanael _5026231079.pdf berhasil di-transform.
+2025-06-27 08:18:47,893 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kevin Nathanael _5026231079.pdf SELESAI.
+
+2025-06-27 08:18:49,291 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Ade Dzakwan_5026231154.pdf
+2025-06-27 08:18:49,291 - ERROR - \u274c[GAGAL]: Muhammad Ade Dzakwan_5026231154.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:18:49,433 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Hudzaifah A_5026211081.pdf
+2025-06-27 08:18:49,433 - INFO - \u2705[SUKSES]: Muhammad Hudzaifah A_5026211081.pdf berhasil di-transform.
+2025-06-27 08:18:49,446 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Hudzaifah A_5026211081.pdf SELESAI.
+
+2025-06-27 08:18:49,573 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Iqbal Baiduri Yamani_5026221103.pdf
+2025-06-27 08:18:49,573 - INFO - \u2705[SUKSES]: Muhammad Iqbal Baiduri Yamani_5026221103.pdf berhasil di-transform.
+2025-06-27 08:18:49,588 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Iqbal Baiduri Yamani_5026221103.pdf SELESAI.
+
+2025-06-27 08:18:49,736 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Razan Parisya Putra_5026231174.pdf
+2025-06-27 08:18:49,737 - INFO - \u2705[SUKSES]: Muhammad Razan Parisya Putra_5026231174.pdf berhasil di-transform.
+2025-06-27 08:18:49,761 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf SELESAI.
+
+2025-06-27 08:18:51,370 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Rifqi Alfareza Santosa_5026231133.pdf
+2025-06-27 08:18:51,370 - ERROR - \u274c[GAGAL]: Muhammad Rifqi Alfareza Santosa_5026231133.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:18:51,467 - INFO - \U0001f504 Memulai proses ETL untuk: Naufal Maula Nabil_5026231107.pdf
+2025-06-27 08:18:51,467 - INFO - \u2705[SUKSES]: Naufal Maula Nabil_5026231107.pdf berhasil di-transform.
+2025-06-27 08:18:51,488 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Naufal Maula Nabil_5026231107.pdf SELESAI.
+
+2025-06-27 08:18:51,593 - INFO - \U0001f504 Memulai proses ETL untuk: NIcholas Evan S_5026231146.pdf
+2025-06-27 08:18:51,593 - INFO - \u2705[SUKSES]: NIcholas Evan S_5026231146.pdf berhasil di-transform.
+2025-06-27 08:18:51,603 - INFO - \U0001f389[SUKSES]: Proses ETL untuk NIcholas Evan S_5026231146.pdf SELESAI.
+
+2025-06-27 08:18:51,705 - INFO - \U0001f504 Memulai proses ETL untuk: Rafindita Sumar Ramadhan_5026231129.pdf
+2025-06-27 08:18:51,706 - INFO - \u2705[SUKSES]: Rafindita Sumar Ramadhan_5026231129.pdf berhasil di-transform.
+2025-06-27 08:18:51,718 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Rafindita Sumar Ramadhan_5026231129.pdf SELESAI.
+
+2025-06-27 08:18:51,830 - INFO - \U0001f504 Memulai proses ETL untuk: Sahilah Amru_5026231182.pdf
+2025-06-27 08:18:51,831 - INFO - \u2705[SUKSES]: Sahilah Amru_5026231182.pdf berhasil di-transform.
+2025-06-27 08:18:51,845 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Sahilah Amru_5026231182.pdf SELESAI.
+
+2025-06-27 08:18:51,953 - INFO - \U0001f504 Memulai proses ETL untuk: Shafly Hidayatullah_5026231036.pdf
+2025-06-27 08:18:51,953 - INFO - \u2705[SUKSES]: Shafly Hidayatullah_5026231036.pdf berhasil di-transform.
+2025-06-27 08:18:51,969 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Shafly Hidayatullah_5026231036.pdf SELESAI.
+
+2025-06-27 08:18:52,030 - INFO - \U0001f504 Memulai proses ETL untuk: Shahnaz Ariqah Simanullang_5026231087.pdf
+2025-06-27 08:18:52,030 - INFO - \u2705[SUKSES]: Shahnaz Ariqah Simanullang_5026231087.pdf berhasil di-transform.
+2025-06-27 08:18:52,041 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Shahnaz Ariqah Simanullang_5026231087.pdf SELESAI.
+
+2025-06-27 08:18:52,150 - INFO - \U0001f504 Memulai proses ETL untuk: Sinta Dewi Rahmawati_5026231231.pdf
+2025-06-27 08:18:52,151 - INFO - \u2705[SUKSES]: Sinta Dewi Rahmawati_5026231231.pdf berhasil di-transform.
+2025-06-27 08:18:52,173 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Sinta Dewi Rahmawati_5026231231.pdf SELESAI.
+
+2025-06-27 08:18:52,289 - INFO - \U0001f504 Memulai proses ETL untuk: Tahiyyah Mufhimah_5026231170.pdf
+2025-06-27 08:18:52,289 - INFO - \u2705[SUKSES]: Tahiyyah Mufhimah_5026231170.pdf berhasil di-transform.
+2025-06-27 08:18:52,298 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Tahiyyah Mufhimah_5026231170.pdf SELESAI.
+
+2025-06-27 08:18:52,496 - INFO - \U0001f504 Memulai proses ETL untuk: Yoka_5026231032.pdf
+2025-06-27 08:18:52,496 - INFO - \u2705[SUKSES]: Yoka_5026231032.pdf berhasil di-transform.
+2025-06-27 08:18:52,511 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Yoka_5026231032.pdf SELESAI.
+
+2025-06-27 08:18:53,973 - INFO - \U0001f504 Memulai proses ETL untuk: Zihni_5026231012.pdf
+2025-06-27 08:18:53,974 - ERROR - \u274c[GAGAL]: Zihni_5026231012.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+
+---
+2025-06-27 08:30:59,126 - INFO - \U0001f4e6[INFO]: Ditemukan 41 file PDF di folder 'data_transkrip'
+
+2025-06-27 08:30:59,240 - INFO - \U0001f504 Memulai proses ETL untuk: Adelia Paramita Putri_5026231196.pdf
+2025-06-27 08:30:59,241 - INFO - \u2705[SUKSES]: Adelia Paramita Putri_5026231196.pdf berhasil di-transform.
+2025-06-27 08:30:59,274 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Adelia Paramita Putri_5026231196.pdf SELESAI.
+
+2025-06-27 08:30:59,402 - INFO - \U0001f504 Memulai proses ETL untuk: Adifa Fajri_5026231178.pdf
+2025-06-27 08:30:59,403 - INFO - \u2705[SUKSES]: Adifa Fajri_5026231178.pdf berhasil di-transform.
+2025-06-27 08:30:59,428 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Adifa Fajri_5026231178.pdf SELESAI.
+
+2025-06-27 08:30:59,563 - INFO - \U0001f504 Memulai proses ETL untuk: Akhtar Zia_5026231095.pdf
+2025-06-27 08:30:59,563 - INFO - \u2705[SUKSES]: Akhtar Zia_5026231095.pdf berhasil di-transform.
+2025-06-27 08:30:59,583 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Akhtar Zia_5026231095.pdf SELESAI.
+
+2025-06-27 08:30:59,676 - INFO - \U0001f504 Memulai proses ETL untuk: Alfan Ghofari_5026231208.pdf
+2025-06-27 08:30:59,677 - INFO - \u2705[SUKSES]: Alfan Ghofari_5026231208.pdf berhasil di-transform.
+2025-06-27 08:30:59,691 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Alfan Ghofari_5026231208.pdf SELESAI.
+
+2025-06-27 08:30:59,797 - INFO - \U0001f504 Memulai proses ETL untuk: Arjuna Veetaraq_5026231227.pdf
+2025-06-27 08:30:59,798 - INFO - \u2705[SUKSES]: Arjuna Veetaraq_5026231227.pdf berhasil di-transform.
+2025-06-27 08:30:59,806 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arjuna Veetaraq_5026231227.pdf SELESAI.
+
+2025-06-27 08:30:59,891 - INFO - \U0001f504 Memulai proses ETL untuk: Arsya Nueva_5026231099.pdf
+2025-06-27 08:30:59,892 - INFO - \u2705[SUKSES]: Arsya Nueva_5026231099.pdf berhasil di-transform.
+2025-06-27 08:30:59,906 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arsya Nueva_5026231099.pdf SELESAI.
+
+2025-06-27 08:31:00,005 - INFO - \U0001f504 Memulai proses ETL untuk: Arya Wiraguna Dwiputra_5026231083.pdf
+2025-06-27 08:31:00,005 - INFO - \u2705[SUKSES]: Arya Wiraguna Dwiputra_5026231083.pdf berhasil di-transform.
+2025-06-27 08:31:00,016 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Arya Wiraguna Dwiputra_5026231083.pdf SELESAI.
+
+2025-06-27 08:31:00,121 - INFO - \U0001f504 Memulai proses ETL untuk: Auliya Malika_5026231141.pdf
+2025-06-27 08:31:00,122 - INFO - \u2705[SUKSES]: Auliya Malika_5026231141.pdf berhasil di-transform.
+2025-06-27 08:31:00,127 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Auliya Malika_5026231141.pdf SELESAI.
+
+2025-06-27 08:31:00,218 - INFO - \U0001f504 Memulai proses ETL untuk: Ayesha Hana Azkiya_5026231125.pdf
+2025-06-27 08:31:00,219 - INFO - \u2705[SUKSES]: Ayesha Hana Azkiya_5026231125.pdf berhasil di-transform.
+2025-06-27 08:31:00,233 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Ayesha Hana Azkiya_5026231125.pdf SELESAI.
+
+2025-06-27 08:31:00,372 - INFO - \U0001f504 Memulai proses ETL untuk: Azrul_5026231166.pdf
+2025-06-27 08:31:00,373 - INFO - \u2705[SUKSES]: Azrul_5026231166.pdf berhasil di-transform.
+2025-06-27 08:31:00,391 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Azrul_5026231166.pdf SELESAI.
+
+2025-06-27 08:31:00,493 - INFO - \U0001f504 Memulai proses ETL untuk: Bagas Rafi Dewantara_5026231091.pdf
+2025-06-27 08:31:00,494 - INFO - \u2705[SUKSES]: Bagas Rafi Dewantara_5026231091.pdf berhasil di-transform.
+2025-06-27 08:31:00,513 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Bagas Rafi Dewantara_5026231091.pdf SELESAI.
+
+2025-06-27 08:31:00,601 - INFO - \U0001f504 Memulai proses ETL untuk: Baqhiz Faruq S_5026231212.pdf
+2025-06-27 08:31:00,601 - INFO - \u2705[SUKSES]: Baqhiz Faruq S_5026231212.pdf berhasil di-transform.
+2025-06-27 08:31:00,618 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Baqhiz Faruq S_5026231212.pdf SELESAI.
+
+2025-06-27 08:31:00,703 - INFO - \U0001f504 Memulai proses ETL untuk: Burhan_5026231074.pdf
+2025-06-27 08:31:00,703 - INFO - \u2705[SUKSES]: Burhan_5026231074.pdf berhasil di-transform.
+2025-06-27 08:31:00,720 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Burhan_5026231074.pdf SELESAI.
+
+2025-06-27 08:31:00,819 - INFO - \U0001f504 Memulai proses ETL untuk: Burju_5026231066.pdf
+2025-06-27 08:31:00,820 - INFO - \u2705[SUKSES]: Burju_5026231066.pdf berhasil di-transform.
+2025-06-27 08:31:00,831 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Burju_5026231066.pdf SELESAI.
+
+2025-06-27 08:31:00,922 - INFO - \U0001f504 Memulai proses ETL untuk: Cristo_5026231200.pdf
+2025-06-27 08:31:00,922 - INFO - \u2705[SUKSES]: Cristo_5026231200.pdf berhasil di-transform.
+2025-06-27 08:31:00,941 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Cristo_5026231200.pdf SELESAI.
+
+2025-06-27 08:31:01,032 - INFO - \U0001f504 Memulai proses ETL untuk: Diva Nesia Putri_5026231020.pdf
+2025-06-27 08:31:01,032 - INFO - \u2705[SUKSES]: Diva Nesia Putri_5026231020.pdf berhasil di-transform.
+2025-06-27 08:31:01,038 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Diva Nesia Putri_5026231020.pdf SELESAI.
+
+2025-06-27 08:31:02,351 - INFO - \U0001f504 Memulai proses ETL untuk: Dzaki Adfiz_5026231150.pdf
+2025-06-27 08:31:02,352 - ERROR - \u274c[GAGAL]: Dzaki Adfiz_5026231150.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:31:02,438 - INFO - \U0001f504 Memulai proses ETL untuk: Eric Vincentius Jaolis_5026231103.pdf
+2025-06-27 08:31:02,439 - INFO - \u2705[SUKSES]: Eric Vincentius Jaolis_5026231103.pdf berhasil di-transform.
+2025-06-27 08:31:02,448 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Eric Vincentius Jaolis_5026231103.pdf SELESAI.
+
+2025-06-27 08:31:02,533 - INFO - \U0001f504 Memulai proses ETL untuk: Fathan Maulana Prasetya_5026231026.pdf
+2025-06-27 08:31:02,533 - INFO - \u2705[SUKSES]: Fathan Maulana Prasetya_5026231026.pdf berhasil di-transform.
+2025-06-27 08:31:02,539 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Fathan Maulana Prasetya_5026231026.pdf SELESAI.
+
+2025-06-27 08:31:02,645 - INFO - \U0001f504 Memulai proses ETL untuk: Heber Bryan Hutajulu_5026231204.pdf
+2025-06-27 08:31:02,645 - INFO - \u2705[SUKSES]: Heber Bryan Hutajulu_5026231204.pdf berhasil di-transform.
+2025-06-27 08:31:02,651 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Heber Bryan Hutajulu_5026231204.pdf SELESAI.
+
+2025-06-27 08:31:02,778 - INFO - \U0001f504 Memulai proses ETL untuk: Hizkia Crisantino_5026231040.pdf
+2025-06-27 08:31:02,779 - INFO - \u2705[SUKSES]: Hizkia Crisantino_5026231040.pdf berhasil di-transform.
+2025-06-27 08:31:02,784 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Hizkia Crisantino_5026231040.pdf SELESAI.
+
+2025-06-27 08:31:02,877 - INFO - \U0001f504 Memulai proses ETL untuk: I Putu Febryan Khrisyantara_5026231116.pdf
+2025-06-27 08:31:02,877 - INFO - \u2705[SUKSES]: I Putu Febryan Khrisyantara_5026231116.pdf berhasil di-transform.
+2025-06-27 08:31:02,884 - INFO - \U0001f389[SUKSES]: Proses ETL untuk I Putu Febryan Khrisyantara_5026231116.pdf SELESAI.
+
+2025-06-27 08:31:02,976 - INFO - \U0001f504 Memulai proses ETL untuk: Javed Amani Syauki_5026231186.pdf
+2025-06-27 08:31:02,976 - INFO - \u2705[SUKSES]: Javed Amani Syauki_5026231186.pdf berhasil di-transform.
+2025-06-27 08:31:02,982 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Javed Amani Syauki_5026231186.pdf SELESAI.
+
+2025-06-27 08:31:03,076 - INFO - \U0001f504 Memulai proses ETL untuk: Kayla Putri M_5026231158.pdf
+2025-06-27 08:31:03,076 - INFO - \u2705[SUKSES]: Kayla Putri M_5026231158.pdf berhasil di-transform.
+2025-06-27 08:31:03,082 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kayla Putri M_5026231158.pdf SELESAI.
+
+2025-06-27 08:31:03,180 - INFO - \U0001f504 Memulai proses ETL untuk: Kellan Matthew Gulardi_5026231028.pdf
+2025-06-27 08:31:03,180 - INFO - \u2705[SUKSES]: Kellan Matthew Gulardi_5026231028.pdf berhasil di-transform.
+2025-06-27 08:31:03,190 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kellan Matthew Gulardi_5026231028.pdf SELESAI.
+
+2025-06-27 08:31:03,284 - INFO - \U0001f504 Memulai proses ETL untuk: Kevin Nathanael _5026231079.pdf
+2025-06-27 08:31:03,284 - INFO - \u2705[SUKSES]: Kevin Nathanael _5026231079.pdf berhasil di-transform.
+2025-06-27 08:31:03,291 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Kevin Nathanael _5026231079.pdf SELESAI.
+
+2025-06-27 08:31:04,576 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Ade Dzakwan_5026231154.pdf
+2025-06-27 08:31:04,576 - ERROR - \u274c[GAGAL]: Muhammad Ade Dzakwan_5026231154.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:31:04,702 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Hudzaifah A_5026211081.pdf
+2025-06-27 08:31:04,703 - INFO - \u2705[SUKSES]: Muhammad Hudzaifah A_5026211081.pdf berhasil di-transform.
+2025-06-27 08:31:04,712 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Hudzaifah A_5026211081.pdf SELESAI.
+
+2025-06-27 08:31:04,820 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Iqbal Baiduri Yamani_5026221103.pdf
+2025-06-27 08:31:04,820 - INFO - \u2705[SUKSES]: Muhammad Iqbal Baiduri Yamani_5026221103.pdf berhasil di-transform.
+2025-06-27 08:31:04,826 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Iqbal Baiduri Yamani_5026221103.pdf SELESAI.
+
+2025-06-27 08:31:04,954 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Razan Parisya Putra_5026231174.pdf
+2025-06-27 08:31:04,955 - INFO - \u2705[SUKSES]: Muhammad Razan Parisya Putra_5026231174.pdf berhasil di-transform.
+2025-06-27 08:31:04,964 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf SELESAI.
+
+2025-06-27 08:31:06,372 - INFO - \U0001f504 Memulai proses ETL untuk: Muhammad Rifqi Alfareza Santosa_5026231133.pdf
+2025-06-27 08:31:06,372 - ERROR - \u274c[GAGAL]: Muhammad Rifqi Alfareza Santosa_5026231133.pdf gagal di-transform: NRP/Nama tidak ditemukan.
+2025-06-27 08:31:06,456 - INFO - \U0001f504 Memulai proses ETL untuk: Naufal Maula Nabil_5026231107.pdf
+2025-06-27 08:31:06,456 - INFO - \u2705[SUKSES]: Naufal Maula Nabil_5026231107.pdf berhasil di-transform.
+2025-06-27 08:31:06,461 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Naufal Maula Nabil_5026231107.pdf SELESAI.
+
+2025-06-27 08:31:06,555 - INFO - \U0001f504 Memulai proses ETL untuk: NIcholas Evan S_5026231146.pdf
+2025-06-27 08:31:06,556 - INFO - \u2705[SUKSES]: NIcholas Evan S_5026231146.pdf berhasil di-transform.
+2025-06-27 08:31:06,572 - INFO - \U0001f389[SUKSES]: Proses ETL untuk NIcholas Evan S_5026231146.pdf SELESAI.
+
+2025-06-27 08:31:06,671 - INFO - \U0001f504 Memulai proses ETL untuk: Rafindita Sumar Ramadhan_5026231129.pdf
+2025-06-27 08:31:06,671 - INFO - \u2705[SUKSES]: Rafindita Sumar Ramadhan_5026231129.pdf berhasil di-transform.
+2025-06-27 08:31:06,687 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Rafindita Sumar Ramadhan_5026231129.pdf SELESAI.
+
+2025-06-27 08:31:06,787 - INFO - \U0001f504 Memulai proses ETL untuk: Sahilah Amru_5026231182.pdf
+2025-06-27 08:31:06,787 - INFO - \u2705[SUKSES]: Sahilah Amru_5026231182.pdf berhasil di-transform.
+2025-06-27 08:31:06,793 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Sahilah Amru_5026231182.pdf SELESAI.
+
+2025-06-27 08:31:06,886 - INFO - \U0001f504 Memulai proses ETL untuk: Shafly Hidayatullah_5026231036.pdf
+2025-06-27 08:31:06,886 - INFO - \u2705[SUKSES]: Shafly Hidayatullah_5026231036.pdf berhasil di-transform.
+2025-06-27 08:31:06,897 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Shafly Hidayatullah_5026231036.pdf SELESAI.
+
+2025-06-27 08:31:06,951 - INFO - \U0001f504 Memulai proses ETL untuk: Shahnaz Ariqah Simanullang_5026231087.pdf
+2025-06-27 08:31:06,951 - INFO - \u2705[SUKSES]: Shahnaz Ariqah Simanullang_5026231087.pdf berhasil di-transform.
+2025-06-27 08:31:06,958 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Shahnaz Ariqah Simanullang_5026231087.pdf SELESAI.
+
+2025-06-27 08:31:07,053 - INFO - \U0001f504 Memulai proses ETL untuk: Sinta Dewi Rahmawati_5026231231.pdf
+2025-06-27 08:31:07,053 - INFO - \u2705[SUKSES]: Sinta Dewi Rahmawati_5026231231.pdf berhasil di-transform.
+2025-06-27 08:31:07,067 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Sinta Dewi Rahmawati_5026231231.pdf SELESAI.
+
+2025-06-27 08:31:07,171 - INFO - \U0001f504 Memulai proses ETL untuk: Tahiyyah Mufhimah_5026231170.pdf
+2025-06-27 08:31:07,171 - INFO - \u2705[SUKSES]: Tahiyyah Mufhimah_5026231170.pdf berhasil di-transform.
+2025-06-27 08:31:07,185 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Tahiyyah Mufhimah_5026231170.pdf SELESAI.
+
+2025-06-27 08:31:07,345 - INFO - \U0001f504 Memulai proses ETL untuk: Yoka_5026231032.pdf
+2025-06-27 08:31:07,345 - INFO - \u2705[SUKSES]: Yoka_5026231032.pdf berhasil di-transform.
+2025-06-27 08:31:07,366 - INFO - \U0001f389[SUKSES]: Proses ETL untuk Yoka_5026231032.pdf SELESAI.
+
+2025-06-27 08:31:08,895 - INFO - \U0001f504 Memulai proses ETL untuk: Zihni_5026231012.pdf
+2025-06-27 08:31:08,895 - ERROR - \u274c[GAGAL]: Zihni_5026231012.pdf gagal di-transform: NRP/Nama tidak ditemukan.

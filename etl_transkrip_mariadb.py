@@ -2,18 +2,21 @@
 import os
 import re
 import logging
+from logging import FileHandler
+import io
 import pdfplumber
 import mysql.connector
 
+
 # === Konfigurasi Logging ===
 logging.basicConfig(
-    filename="etl_transkrip.log",
+    handlers=[logging.FileHandler("etl_transkrip_mariadb.log", mode='w', encoding='utf-8')],
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
 # === Konfigurasi Database ===
-DB_NAME = "dw_nilai_kelasc"
+DB_NAME = "dw_nilai_transkrip_kelasc"
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
@@ -39,7 +42,7 @@ cursor = conn.cursor()
 cursor.execute(f"DROP DATABASE IF EXISTS {DB_NAME}")
 cursor.execute(f"CREATE DATABASE {DB_NAME}")
 cursor.execute(f"USE {DB_NAME}")
-logging.info("Database dw_nilai_kelasc berhasil dibuat ulang.")
+logging.info("Database dw berhasil dibuat ulang.")
 
 # === Buat Tabel-Tabel Star Schema ===
 table_sql = [
@@ -113,15 +116,19 @@ def get_or_create_id(sql_select, sql_insert, select_params, insert_params):
 # === Proses Semua PDF ===
 folder_path = "data_transkrip"
 pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
+logging.info(f"📦 [INFO]: Ditemukan {len(pdf_files)} file PDF di folder '{folder_path}'\n")
 
 for file in pdf_files:
     try:
+        # === Extract Data dari PDF ===
         with pdfplumber.open(os.path.join(folder_path, file)) as pdf:
             text = "\n".join(page.extract_text() for page in pdf.pages)
+            logging.info(f"🔄 Memulai proses ETL untuk: {file}")
 
+        # === Transform Data ===
         match_nrp_nama = re.search(r"NRP\s*/\s*Nama\s*(\d+)\s*/\s*(.*?)\s*SKS Tempuh", text, re.DOTALL)
         if not match_nrp_nama:
-            logging.error(f"[GAGAL] {file} tidak ditemukan NRP/Nama.")
+            logging.error(f"❌ [GAGAL]: {file} gagal di-transform: NRP/Nama tidak ditemukan.")
             continue
 
         nrp = match_nrp_nama.group(1).strip()
@@ -139,6 +146,9 @@ for file in pdf_files:
         ip_sarjana_match = re.search(r"IP Tahap Sarjana\s*:\s*(\d+\.\d+)", text)
         ip_sarjana = float(ip_sarjana_match.group(1)) if ip_sarjana_match else 0.0
 
+        logging.info(f"✅ [SUKSES]: {file} berhasil di-transform.")
+
+        # === Load Data ke Tabel DW ===
         id_mhs = get_or_create_id(
             "SELECT id_mahasiswa FROM Dim_Mahasiswa WHERE nrp = %s",
             "INSERT INTO Dim_Mahasiswa (nrp, nama, status, ipk, ip_persiapan, ip_sarjana) VALUES (%s, %s, %s, %s, %s, %s)",
@@ -179,12 +189,11 @@ for file in pdf_files:
                 (id_mhs, id_mk, id_waktu, id_nilai)
             )
 
-        logging.info(f"[SUKSES] Proses ETL untuk {file} selesai.")
+        logging.info(f"🎉[SUKSES]: Proses ETL untuk {file} SELESAI.\n")
 
     except Exception as e:
-        logging.error(f"[GAGAL] Proses {file} error: {e}")
-
+        logging.error(f"💥 [ERROR]: {file} error fatal: {e}\n")
 conn.commit()
 cursor.close()
 conn.close()
-print("ETL selesai. Lihat log di etl_transkrip.log")
+print("✅ Seluruh proses ETL selesai. Lihat log di etl_transkrip_mariadb.log")
