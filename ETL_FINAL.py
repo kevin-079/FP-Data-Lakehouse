@@ -86,7 +86,7 @@ table_sql = [
     )
     """,
     """
-    CREATE TABLE Fact_Transkrip (
+    CREATE TABLE Fact_Nilai_MK (
         id_transkrip INT AUTO_INCREMENT PRIMARY KEY,
         id_mahasiswa INT NOT NULL,
         id_mk INT  NOT NULL,
@@ -218,16 +218,16 @@ for file in pdf_files:
             )
 
             cursor.execute(
-                "INSERT INTO Fact_Transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai, bobot_matkul) VALUES (%s, %s, %s, %s, %s)",
+                "INSERT INTO Fact_Nilai_MK (id_mahasiswa, id_mk, id_waktu, id_nilai, bobot_matkul) VALUES (%s, %s, %s, %s, %s)",
                 (id_mhs, id_mk, id_waktu, id_nilai, bobot_matkul)
             )
             # === Hitung dan Masukkan Data ke Fact_Nilai_Semester ===
-            cursor.execute("SELECT DISTINCT id_mahasiswa FROM Fact_Transkrip")
+            cursor.execute("SELECT DISTINCT id_mahasiswa FROM Fact_Nilai_MK")
             mahasiswa_list = cursor.fetchall()
 
             for (id_mahasiswa,) in mahasiswa_list:
                 cursor.execute("""
-                    SELECT DISTINCT id_waktu FROM Fact_Transkrip
+                    SELECT DISTINCT id_waktu FROM Fact_Nilai_MK
                     WHERE id_mahasiswa = %s
                     ORDER BY id_waktu
                 """, (id_mahasiswa,))
@@ -241,7 +241,7 @@ for file in pdf_files:
                     # Ambil semua MK di semester itu
                     cursor.execute("""
                         SELECT dmk.sks, dn.bobot
-                        FROM Fact_Transkrip fn
+                        FROM Fact_Nilai_MK fn
                         JOIN Dim_MataKuliah dmk ON fn.id_mk = dmk.id_mk
                         JOIN Dim_Nilai dn ON fn.id_nilai = dn.id_nilai
                         WHERE fn.id_mahasiswa = %s AND fn.id_waktu = %s
@@ -260,7 +260,7 @@ for file in pdf_files:
 
                     # Ambil nilai semester (untuk representasi dominan)
                     cursor.execute("""
-                        SELECT id_nilai FROM Fact_Transkrip
+                        SELECT id_nilai FROM Fact_Nilai_MK
                         WHERE id_mahasiswa = %s AND id_waktu = %s
                         ORDER BY id_nilai DESC LIMIT 1
                     """, (id_mahasiswa, id_waktu))
