@@ -8,12 +8,12 @@ import pdfplumber
 import psycopg2
 
 logging.basicConfig(
-    handlers=[logging.FileHandler("etl_transkrip_postgre.log", mode='w', encoding='utf-8')],
+    handlers=[logging.FileHandler("etl_transkrip_postgres.log", mode='w', encoding='utf-8')],
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-DB_NAME = "dw_nilai_kelasdlhc"
+DB_NAME = "dlh_transkrip_kelasc"
 DB_CONFIG = {
     "host": "localhost",
     "user": "postgres",
@@ -43,35 +43,40 @@ table_sql = [
     """
     CREATE TABLE Dim_Mahasiswa (
         id_mahasiswa SERIAL PRIMARY KEY,
-        nrp VARCHAR(20) UNIQUE,
-        nama VARCHAR(100),
+        nrp VARCHAR(20) UNIQUE NOT NULL,
+        nama VARCHAR(100) NOT NULL,
         status VARCHAR(50),
-        ipk NUMERIC(4,2),
-        ip_persiapan NUMERIC(4,2),
-        ip_sarjana NUMERIC(4,2)
+        ipk NUMERIC(3,2),
+        sks_persiapan INT,
+        ip_persiapan NUMERIC(3,2),
+        sks_sarjana INT,
+        ip_sarjana NUMERIC(3,2),
+        sks_tempuh INT,
+        sks_lulus INT
     )
     """,
     """
     CREATE TABLE Dim_MataKuliah (
         id_mk SERIAL PRIMARY KEY,
-        kode_mk VARCHAR(20),
-        nama_mk TEXT,
-        sks INT,
-        tahap VARCHAR(20)
+        kode_mk VARCHAR(20) UNIQUE NOT NULL,
+        nama_mk VARCHAR(100) NOT NULL,
+        sks INT NOT NULL,
+        tahap VARCHAR(20) NOT NULL
     )
     """,
     """
     CREATE TABLE Dim_Waktu (
         id_waktu SERIAL PRIMARY KEY,
-        tahun INT,
-        semester VARCHAR(10)
+        tahun INT NOT NULL,
+        semester VARCHAR(10) NOT NULL,
+        CONSTRAINT unique_time UNIQUE (tahun, semester)
     )
     """,
     """
     CREATE TABLE Dim_Nilai (
         id_nilai SERIAL PRIMARY KEY,
-        huruf VARCHAR(5),
-        bobot NUMERIC(3,2)
+        huruf VARCHAR(5) UNIQUE NOT NULL,
+        bobot NUMERIC(3,2) NOT NULL
     )
     """,
     """
@@ -80,7 +85,9 @@ table_sql = [
         id_mahasiswa INT REFERENCES Dim_Mahasiswa(id_mahasiswa),
         id_mk INT REFERENCES Dim_MataKuliah(id_mk),
         id_waktu INT REFERENCES Dim_Waktu(id_waktu),
-        id_nilai INT REFERENCES Dim_Nilai(id_nilai)
+        id_nilai INT REFERENCES Dim_Nilai(id_nilai),
+        bobot_matkul NUMERIC(4,2) NOT NULL,
+        CONSTRAINT unique_transkrip UNIQUE (id_mahasiswa, id_mk, id_waktu, id_nilai)
     )
     """
 ]
@@ -129,24 +136,35 @@ for file in pdf_files:
         status = status_match.group(1).strip() if status_match else "-"
         ip_persiapan = float(re.search(r"IP Tahap Persiapan\s*:\s*(\d+\.\d+)", text).group(1)) if re.search(r"IP Tahap Persiapan\s*:\s*(\d+\.\d+)", text) else 0.0
         ip_sarjana = float(re.search(r"IP Tahap Sarjana\s*:\s*(\d+\.\d+)", text).group(1)) if re.search(r"IP Tahap Sarjana\s*:\s*(\d+\.\d+)", text) else 0.0
+        sks_match = re.search(r"SKS\s*Tempuh\s*/\s*SKS\s*Lulus\s*(\d+)\s*/\s*(\d+)", text)
+        sks_tempuh = int(sks_match.group(1)) if sks_match else 0
+        sks_lulus = int(sks_match.group(2)) if sks_match else 0
+        sks_persiapan_match = re.search(r"Total Sks Tahap Persiapan\s*:\s*(\d+)", text, re.IGNORECASE)
+        sks_persiapan = int(sks_persiapan_match.group(1)) if sks_persiapan_match else 0
+        sks_sarjana_match = re.search(r"Total Sks Tahap Sarjana\s*:\s*(\d+)", text, re.IGNORECASE)
+        sks_sarjana = int(sks_sarjana_match.group(1)) if sks_sarjana_match else 0
+
 
         logging.info(f"✅[SUKSES]: {file} berhasil di-transform.")
 
         # Load data ke database
         id_mhs = get_or_create_id(
             "SELECT id_mahasiswa FROM Dim_Mahasiswa WHERE nrp = %s",
-            "INSERT INTO Dim_Mahasiswa (nrp, nama, status, ipk, ip_persiapan, ip_sarjana) VALUES (%s, %s, %s, %s, %s, %s)",
+            "INSERT INTO Dim_Mahasiswa (nrp, nama, status, ipk, sks_persiapan, ip_persiapan, sks_sarjana, ip_sarjana, sks_tempuh, sks_lulus) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
             (nrp,),
-            (nrp, nama, status, ipk, ip_persiapan, ip_sarjana),
+            (nrp, nama, status, ipk, sks_persiapan, ip_persiapan, sks_sarjana, ip_sarjana, sks_tempuh, sks_lulus),
             "id_mahasiswa"
         )
 
-        regex_mk = r"((ES|EE|SM)\d{6})\s+(.+?)\s+(\d)\s+(\d{4})/(Gs|Gn)/[A-Z]{1,2}\s+([A-Z]{1,2})"
+        regex_mk = r"([A-Z]{2}\d{6})\s+(.+?)\s+(\d)\s+(\d{4})/(Gs|Gn)/[A-Z]{0,2}\s+([A-Z]{1,2})"
         matches = re.findall(regex_mk, text)
 
-        for kode_mk, _, nama_mk, sks, tahun, semester_kode, nilai in matches:
+        for kode_mk, nama_mk, sks, tahun, semester_kode, nilai in matches:
             tahap = "Sarjana" if "Tahap: Sarjana" in text and text.index("Tahap: Sarjana") < text.index(kode_mk) else "Persiapan"
             semester = "Gasal" if semester_kode == "Gs" else "Genap"
+            sks = int(sks)
+            bobot = NILAI_BOBOT.get(nilai, 0.0)
+            bobot_matkul = bobot * sks  # Bobot matkul dihitung sebagai bobot nilai dikali SKS
 
             id_mk = get_or_create_id(
                 "SELECT id_mk FROM Dim_MataKuliah WHERE kode_mk = %s",
@@ -173,8 +191,8 @@ for file in pdf_files:
             )
 
             cursor.execute(
-                "INSERT INTO Fact_Transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai) VALUES (%s, %s, %s, %s)",
-                (id_mhs, id_mk, id_waktu, id_nilai)
+                "INSERT INTO Fact_Transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai, bobot_matkul) VALUES (%s, %s, %s, %s, %s)",
+                (id_mhs, id_mk, id_waktu, id_nilai, bobot_matkul)
             )
 
         logging.info(f"🎉[SUKSES]: Proses ETL untuk {file} SELESAI.\n")

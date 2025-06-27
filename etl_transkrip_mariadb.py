@@ -16,7 +16,7 @@ logging.basicConfig(
 )
 
 # === Konfigurasi Database ===
-DB_NAME = "dw_nilai_transkrip_kelasc"
+DB_NAME = "dlh_transkrip_kelasc"
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
@@ -49,48 +49,55 @@ table_sql = [
     """
     CREATE TABLE Dim_Mahasiswa (
         id_mahasiswa INT AUTO_INCREMENT PRIMARY KEY,
-        nrp VARCHAR(20) UNIQUE,
-        nama VARCHAR(100),
+        nrp VARCHAR(20) UNIQUE NOT NULL,
+        nama VARCHAR(100) NOT NULL,
         status VARCHAR(50),
-        ipk DECIMAL(4,2),
-        ip_persiapan DECIMAL(4,2),
-        ip_sarjana DECIMAL(4,2)
+        ipk DECIMAL(3,2),
+        sks_persiapan INT,
+        ip_persiapan DECIMAL(3,2),
+        sks_sarjana INT,
+        ip_sarjana DECIMAL(3,2),
+        sks_tempuh INT,
+        sks_lulus INT
     )
     """,
     """
     CREATE TABLE Dim_MataKuliah (
         id_mk INT AUTO_INCREMENT PRIMARY KEY,
-        kode_mk VARCHAR(20),
-        nama_mk TEXT,
-        sks INT,
-        tahap VARCHAR(20)
+        kode_mk VARCHAR(20) UNIQUE NOT NULL,
+        nama_mk VARCHAR(100) NOT NULL,
+        sks INT NOT NULL,
+        tahap VARCHAR(20) NOT NULL
     )
     """,
     """
     CREATE TABLE Dim_Waktu (
         id_waktu INT AUTO_INCREMENT PRIMARY KEY,
-        tahun INT,
-        semester VARCHAR(10)
+        tahun INT NOT NULL,
+        semester VARCHAR(20) NOT NULL,
+        UNIQUE KEY unique_time (tahun, semester)
     )
     """,
     """
     CREATE TABLE Dim_Nilai (
         id_nilai INT AUTO_INCREMENT PRIMARY KEY,
-        huruf VARCHAR(5),
-        bobot DECIMAL(3,2)
+        huruf VARCHAR(5) UNIQUE NOT NULL,
+        bobot DECIMAL(3,2) NOT NULL
     )
     """,
     """
     CREATE TABLE Fact_Transkrip (
         id_transkrip INT AUTO_INCREMENT PRIMARY KEY,
-        id_mahasiswa INT,
-        id_mk INT,
-        id_waktu INT,
-        id_nilai INT,
+        id_mahasiswa INT NOT NULL,
+        id_mk INT  NOT NULL,
+        id_waktu INT NOT NULL,
+        id_nilai INT NOT NULL,
+        bobot_matkul DECIMAL (4,2) NOT NULL,
         FOREIGN KEY (id_mahasiswa) REFERENCES Dim_Mahasiswa(id_mahasiswa),
         FOREIGN KEY (id_mk) REFERENCES Dim_MataKuliah(id_mk),
         FOREIGN KEY (id_waktu) REFERENCES Dim_Waktu(id_waktu),
-        FOREIGN KEY (id_nilai) REFERENCES Dim_Nilai(id_nilai)
+        FOREIGN KEY (id_nilai) REFERENCES Dim_Nilai(id_nilai),
+        UNIQUE KEY unique_transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai)
     )
     """
 ]
@@ -146,22 +153,35 @@ for file in pdf_files:
         ip_sarjana_match = re.search(r"IP Tahap Sarjana\s*:\s*(\d+\.\d+)", text)
         ip_sarjana = float(ip_sarjana_match.group(1)) if ip_sarjana_match else 0.0
 
+        sks_match = re.search(r"SKS\s*Tempuh\s*/\s*SKS\s*Lulus\s*(\d+)\s*/\s*(\d+)", text)
+        sks_tempuh = int(sks_match.group(1)) if sks_match else 0
+        sks_lulus = int(sks_match.group(2)) if sks_match else 0
+
+        sks_persiapan_match = re.search(r"Total Sks Tahap Persiapan\s*:\s*(\d+)", text, re.IGNORECASE)
+        sks_persiapan = int(sks_persiapan_match.group(1)) if sks_persiapan_match else 0
+
+        sks_sarjana_match = re.search(r"Total Sks Tahap Sarjana\s*:\s*(\d+)", text, re.IGNORECASE)
+        sks_sarjana = int(sks_sarjana_match.group(1)) if sks_sarjana_match else 0
+
         logging.info(f"✅ [SUKSES]: {file} berhasil di-transform.")
 
         # === Load Data ke Tabel DW ===
         id_mhs = get_or_create_id(
             "SELECT id_mahasiswa FROM Dim_Mahasiswa WHERE nrp = %s",
-            "INSERT INTO Dim_Mahasiswa (nrp, nama, status, ipk, ip_persiapan, ip_sarjana) VALUES (%s, %s, %s, %s, %s, %s)",
+            "INSERT INTO Dim_Mahasiswa (nrp, nama, status, ipk, sks_persiapan, ip_persiapan, sks_sarjana, ip_sarjana, sks_tempuh, sks_lulus) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
             (nrp,),
-            (nrp, nama, status, ipk, ip_persiapan, ip_sarjana)
+            (nrp, nama, status, ipk, sks_persiapan, ip_persiapan, sks_sarjana, ip_sarjana, sks_tempuh, sks_lulus)
         )
 
-        regex_mk = r"((ES|EE|SM)\d{6})\s+(.+?)\s+(\d)\s+(\d{4})/(Gs|Gn)/[A-Z]{1,2}\s+([A-Z]{1,2})"
+        regex_mk = r"([A-Z]{2}\d{6})\s+(.+?)\s+(\d)\s+(\d{4})/(Gs|Gn)/[A-Z]{0,2}\s+([A-Z]{1,2})"
         matches = re.findall(regex_mk, text)
 
-        for kode_mk, _, nama_mk, sks, tahun, semester_kode, nilai in matches:
+        for kode_mk, nama_mk, sks, tahun, semester_kode, nilai in matches:
             tahap = "Sarjana" if "Tahap: Sarjana" in text and text.index("Tahap: Sarjana") < text.index(kode_mk) else "Persiapan"
             semester = "Gasal" if semester_kode == "Gs" else "Genap"
+            sks_int = int(sks)
+            bobot = NILAI_BOBOT.get(nilai, 0.0)
+            bobot_matkul = sks_int * bobot
 
             id_mk = get_or_create_id(
                 "SELECT id_mk FROM Dim_MataKuliah WHERE kode_mk = %s",
@@ -185,8 +205,8 @@ for file in pdf_files:
             )
 
             cursor.execute(
-                "INSERT INTO Fact_Transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai) VALUES (%s, %s, %s, %s)",
-                (id_mhs, id_mk, id_waktu, id_nilai)
+                "INSERT INTO Fact_Transkrip (id_mahasiswa, id_mk, id_waktu, id_nilai, bobot_matkul) VALUES (%s, %s, %s, %s, %s)",
+                (id_mhs, id_mk, id_waktu, id_nilai, bobot_matkul)
             )
 
         logging.info(f"🎉[SUKSES]: Proses ETL untuk {file} SELESAI.\n")
