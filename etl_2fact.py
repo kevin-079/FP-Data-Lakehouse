@@ -248,7 +248,9 @@ for (id_mahasiswa,) in mahasiswa_list:
             VALUES (%s, %s, %s, %s, %s)
         """, (id_mahasiswa, id_waktu, id_nilai, ips, ipk))
 
+logging.info(f"[SUKSES] Proses ETL pada Fakta Nilai_Semester berhasil.")
+
 conn.commit()
 cursor.close()
 conn.close()
-print("ETL selesai. Lihat log di etl_transkrip.log")
+print("ETL selesai. Lihat log di etl_2fact_transkrip.log")
