@@ -1,0 +1,18 @@
+2025-06-27 10:32:46,039 - INFO - Database dw_nilai_kelasc berhasil dibuat ulang.
+2025-06-27 10:32:46,172 - INFO - Tabel-tabel star schema berhasil dibuat.
+2025-06-27 10:32:46,188 - INFO - Referensi nilai berhasil dimasukkan ke Dim_Nilai.
+2025-06-27 10:32:46,456 - ERROR - [GAGAL] Proses Adelia Paramita Putri_5026231196.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:32:46,776 - ERROR - [GAGAL] Proses Adifa Fajri_5026231178.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:32:47,059 - ERROR - [GAGAL] Proses Akhtar Zia_5026231095.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:32:47,294 - ERROR - [GAGAL] Proses Alfan Ghofari_5026231208.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:32:47,602 - ERROR - [GAGAL] Proses Arjuna Veetaraq_5026231227.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:32:47,953 - ERROR - [GAGAL] Proses Muhammad Razan Parisya Putra_5026231174.pdf error: 1146 (42S02): Table 'dw_transkrip_nilai.fact_transkrip' doesn't exist
+2025-06-27 10:36:24,585 - INFO - Database dw_nilai_kelasc berhasil dibuat ulang.
+2025-06-27 10:36:24,718 - INFO - Tabel-tabel star schema berhasil dibuat.
+2025-06-27 10:36:24,734 - INFO - Referensi nilai berhasil dimasukkan ke Dim_Nilai.
+2025-06-27 10:36:25,002 - INFO - [SUKSES] Proses ETL untuk Adelia Paramita Putri_5026231196.pdf selesai.
+2025-06-27 10:36:25,295 - INFO - [SUKSES] Proses ETL untuk Adifa Fajri_5026231178.pdf selesai.
+2025-06-27 10:36:25,567 - INFO - [SUKSES] Proses ETL untuk Akhtar Zia_5026231095.pdf selesai.
+2025-06-27 10:36:25,948 - INFO - [SUKSES] Proses ETL untuk Alfan Ghofari_5026231208.pdf selesai.
+2025-06-27 10:36:26,201 - INFO - [SUKSES] Proses ETL untuk Arjuna Veetaraq_5026231227.pdf selesai.
+2025-06-27 10:36:26,538 - INFO - [SUKSES] Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf selesai.

@@ -25,3 +25,12 @@
 2025-06-26 23:35:34,651 - INFO - [SUKSES] Proses ETL untuk Alfan Ghofari_5026231208.pdf selesai.
 2025-06-26 23:35:34,742 - INFO - [SUKSES] Proses ETL untuk Arjuna Veetaraq_5026231227.pdf selesai.
 2025-06-26 23:35:34,835 - INFO - [SUKSES] Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf selesai.
+2025-06-27 08:51:33,945 - INFO - Database dw_nilai_kelasc berhasil dibuat ulang.
+2025-06-27 08:51:34,028 - INFO - Tabel-tabel star schema berhasil dibuat.
+2025-06-27 08:51:34,078 - INFO - Referensi nilai berhasil dimasukkan ke Dim_Nilai.
+2025-06-27 08:51:34,294 - INFO - [SUKSES] Proses ETL untuk Adelia Paramita Putri_5026231196.pdf selesai.
+2025-06-27 08:51:34,526 - INFO - [SUKSES] Proses ETL untuk Adifa Fajri_5026231178.pdf selesai.
+2025-06-27 08:51:34,782 - INFO - [SUKSES] Proses ETL untuk Akhtar Zia_5026231095.pdf selesai.
+2025-06-27 08:51:35,044 - INFO - [SUKSES] Proses ETL untuk Alfan Ghofari_5026231208.pdf selesai.
+2025-06-27 08:51:35,242 - INFO - [SUKSES] Proses ETL untuk Arjuna Veetaraq_5026231227.pdf selesai.
+2025-06-27 08:51:35,475 - INFO - [SUKSES] Proses ETL untuk Muhammad Razan Parisya Putra_5026231174.pdf selesai.
